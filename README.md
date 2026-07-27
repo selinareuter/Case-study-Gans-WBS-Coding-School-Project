@@ -195,13 +195,11 @@ Using a common `city_id` across the datasets makes it possible to join weather f
 
 - ETL Pipeline Development
 - Web Scraping with BeautifulSoup
-- REST API Integration
+- API Integration
 - Data Cleaning & Transformation
 - Pandas
-- SQL
 - MySQL Database Design
 - SQLAlchemy
-- Python Automation
 - Working with JSON Data
 
 ---
@@ -225,6 +223,5 @@ Created as part of the **WBS Coding School Data Analytics Bootcamp** to demonstr
 - Python
 - SQL
 - Web Scraping
-- REST APIs
+- APIs
 - ETL Pipelines
-- Relational Database Design
