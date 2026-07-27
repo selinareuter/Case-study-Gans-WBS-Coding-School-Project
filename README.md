@@ -1,6 +1,6 @@
 # 🛴 Gans E-Scooter Share – Automated ETL Pipeline
 
-## 📌 Project Overview
+## Project Overview
 
 This project was completed as part of the **WBS Coding School Data Science Bootcamp**.
 
@@ -10,7 +10,7 @@ The pipeline automatically extracts data from multiple sources, transforms it in
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 - Python
 - Jupyter Notebook (Anaconda)
@@ -30,13 +30,13 @@ The pipeline automatically extracts data from multiple sources, transforms it in
 
 ---
 
-# 📊 ETL Pipeline
+# ETL Pipeline
 
-## 1️⃣ Extract
+## Extract
 
 Data is collected from three different sources.
 
-### 🌍 Web Scraping
+### Web Scraping
 
 Wikipedia pages were scraped to collect:
 
@@ -46,7 +46,7 @@ Wikipedia pages were scraped to collect:
 - Latitude
 - Longitude
 
-### 🌦️ Weather API
+### Weather API
 
 The OpenWeatherMap Forecast API retrieves a **5-day weather forecast** in **3-hour intervals** using each city's latitude and longitude.
 
@@ -60,7 +60,7 @@ Collected information includes:
 - Rainfall
 - Forecast timestamp
 
-### ✈️ Flights API
+### Flights API
 
 The AeroDataBox API retrieves **scheduled flight arrivals for the following day**.
 
@@ -78,7 +78,7 @@ Collected information includes:
 
 ---
 
-## 2️⃣ Transform
+## Transform
 
 The extracted data is cleaned and transformed before being stored.
 
@@ -93,7 +93,7 @@ Transformations include:
 
 ---
 
-## 3️⃣ Load
+## Load
 
 The cleaned datasets are loaded into a MySQL database using **SQLAlchemy** and **Pandas `to_sql()`**.
 
@@ -109,23 +109,23 @@ The tables share a common `city_id`, allowing the datasets to be joined for anal
 
 ---
 
-# 🗄️ Database Design
+# Database Design
 
 The project stores the collected data in a relational MySQL database. Separate tables are used for cities, populations, weather forecasts, airports, and flights. The datasets share a common `city_id`, making it possible to combine information from different sources for further analysis.
 
 ## Entity Relationship Diagram
 
-![EER Diagram](eer_diagram.png)
+![EER Diagram](images/eer_diagram.png)
 
 The database stores static city information together with dynamic weather forecasts, flight arrivals, airport information, and population data. The tables are designed so that they can be joined using `city_id`.
 
 ---
 
-## 📊 Database Tables
+## Database Tables
 
 ### Cities
 
-![Cities Table](cities_table.png)
+![Cities Table](images/cities_table.png)
 
 Stores the list of cities together with their country and geographic coordinates.
 
@@ -133,7 +133,7 @@ Stores the list of cities together with their country and geographic coordinates
 
 ### Airports
 
-![Airports Table](airports_table.png)
+![Airports Table](images/airports_table.png)
 
 Contains airport information (IATA code, ICAO code and airport name) for each city.
 
@@ -141,7 +141,7 @@ Contains airport information (IATA code, ICAO code and airport name) for each ci
 
 ### Population
 
-![Population Table](populations_table.png)
+![Population Table](images/populations_table.png)
 
 Stores the latest population data collected from Wikipedia.
 
@@ -149,7 +149,7 @@ Stores the latest population data collected from Wikipedia.
 
 ### Weather
 
-![Weather Table](weather_table.png)
+![Weather Table](images/weather_table.png)
 
 Contains 5-day weather forecasts in 3-hour intervals retrieved from the OpenWeather API.
 
@@ -157,13 +157,13 @@ Contains 5-day weather forecasts in 3-hour intervals retrieved from the OpenWeat
 
 ### Flights
 
-![Flights Table](flights_table.png)
+![Flights Table](images/flights_table.png)
 
 Contains scheduled arrival flights collected from the AeroDataBox API, including airline, flight number, departure airport, aircraft type and status.
 
 ---
 
-# 🚀 Challenges & Solutions
+# Challenges & Solutions
 
 ### API Rate Limits
 
@@ -192,7 +192,7 @@ Using a common `city_id` across the datasets makes it possible to join weather f
 
 ---
 
-# 💡 Skills Demonstrated
+# Skills Demonstrated
 
 - ETL Pipeline Development
 - Web Scraping with BeautifulSoup
@@ -207,7 +207,7 @@ Using a common `city_id` across the datasets makes it possible to join weather f
 
 ---
 
-# 🔮 Future Improvements
+# Future Improvements
 
 Possible future extensions include:
 
@@ -219,7 +219,7 @@ Possible future extensions include:
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 Created as part of the **WBS Coding School Data Science Bootcamp** to demonstrate practical skills in:
 
