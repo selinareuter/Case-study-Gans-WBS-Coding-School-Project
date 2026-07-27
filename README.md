@@ -17,7 +17,6 @@ The pipeline automatically extracts data from multiple sources, transforms it in
 - Pandas
 - Requests
 - BeautifulSoup
-- Regular Expressions (`re`)
 - Datetime
 - SQLAlchemy
 - PyMySQL
