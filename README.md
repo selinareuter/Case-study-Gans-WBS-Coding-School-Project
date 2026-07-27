@@ -1,8 +1,8 @@
-# 🛴 Gans E-Scooter Share – Automated ETL Pipeline
+# 🛴 Gans E-Scooter Share – ETL Pipeline
 
 ## Project Overview
 
-This project was completed as part of the **WBS Coding School Data Science Bootcamp**.
+This project was completed as part of the **WBS Coding School Data Analytics Bootcamp**.
 
 The goal was to build an **ETL (Extract, Transform, Load) pipeline** for **Gans**, a fictional e-scooter sharing company. Gans aims to optimize the distribution of its e-scooters by collecting external data that influences customer demand, such as weather conditions, population data, and incoming flights.
 
@@ -221,7 +221,7 @@ Possible future extensions include:
 
 # Author
 
-Created as part of the **WBS Coding School Data Analys Bootcamp** to demonstrate practical skills in:
+Created as part of the **WBS Coding School Data Analytics Bootcamp** to demonstrate practical skills in:
 
 - Python
 - SQL
