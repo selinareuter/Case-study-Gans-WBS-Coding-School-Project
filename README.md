@@ -117,6 +117,50 @@ The project stores the collected data in a relational MySQL database. Separate t
 
 ![EER Diagram](eer_diagram.png)
 
+The database stores static city information together with dynamic weather forecasts, flight arrivals, airport information, and population data. The tables are designed so that they can be joined using `city_id`.
+
+---
+
+## 📊 Database Tables
+
+### Cities
+
+![Cities Table](cities_table.png)
+
+Stores the list of cities together with their country and geographic coordinates.
+
+---
+
+### Airports
+
+![Airports Table](airports_table.png)
+
+Contains airport information (IATA code, ICAO code and airport name) for each city.
+
+---
+
+### Population
+
+![Population Table](populations_table.png)
+
+Stores the latest population data collected from Wikipedia.
+
+---
+
+### Weather
+
+![Weather Table](weather_table.png)
+
+Contains 5-day weather forecasts in 3-hour intervals retrieved from the OpenWeather API.
+
+---
+
+### Flights
+
+![Flights Table](flights_table.png)
+
+Contains scheduled arrival flights collected from the AeroDataBox API, including airline, flight number, departure airport, aircraft type and status.
+
 ---
 
 # 🚀 Challenges & Solutions
