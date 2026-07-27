@@ -221,7 +221,7 @@ Possible future extensions include:
 
 # Author
 
-Created as part of the **WBS Coding School Data Science Bootcamp** to demonstrate practical skills in:
+Created as part of the **WBS Coding School Data Analys Bootcamp** to demonstrate practical skills in:
 
 - Python
 - SQL
