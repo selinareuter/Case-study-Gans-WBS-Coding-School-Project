@@ -6,7 +6,7 @@ This project was completed as part of the **WBS Coding School Data Analytics Boo
 
 The goal was to build an **ETL (Extract, Transform, Load) pipeline** for **Gans**, a fictional e-scooter sharing company. Gans aims to optimize the distribution of its e-scooters by collecting external data that influences customer demand, such as weather conditions, population data, and incoming flights.
 
-The pipeline automatically extracts data from multiple sources, transforms it into a clean and structured format, and loads it into a **MySQL relational database** for future analysis and predictive modelling.
+The pipeline extracts data from multiple sources, transforms it into a clean and structured format, and loads it into a **MySQL relational database** for future analysis and predictive modelling.
 
 ---
 
