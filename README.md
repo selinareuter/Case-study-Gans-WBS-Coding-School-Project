@@ -17,9 +17,7 @@ The pipeline extracts data from multiple sources, transforms it into a clean and
 - Pandas
 - Requests
 - BeautifulSoup
-- Datetime
 - SQLAlchemy
-- PyMySQL
 - MySQL Workbench
 
 ### APIs Used
